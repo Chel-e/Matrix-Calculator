@@ -25,4 +25,11 @@ public class Matrix {
         }
         return matrix[targetRow][targetColumn];
     }
+
+    public int getRows(){
+        return rows;
+    }
+    public int getCols(){
+        return cols;
+    }
 }
