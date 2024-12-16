@@ -17,8 +17,6 @@ class MatrixTest {
         matrix = new Matrix(mat);
     }
 
-
-
     @DisplayName("Test if a component is equal original ")
     @Test
     void testGetComponent() {
