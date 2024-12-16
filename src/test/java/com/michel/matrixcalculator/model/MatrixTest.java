@@ -1,6 +1,6 @@
 package com.michel.matrixcalculator.model;
 
-import org.junit.jupiter.api.Assertions;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -22,9 +22,9 @@ class MatrixTest {
     @DisplayName("Test if a component is equal original ")
     @Test
     void testGetComponent() {
-        Assertions.assertEquals(1D, matrix.getComponent(0,0));
-        Assertions.assertEquals(2D, matrix.getComponent(0,1));
-        Assertions.assertEquals(3D, matrix.getComponent(1,0));
-        Assertions.assertEquals(4D, matrix.getComponent(1,1));
+        assertEquals(1D, matrix.getComponent(0,0));
+        assertEquals(2D, matrix.getComponent(0,1));
+        assertEquals(3D, matrix.getComponent(1,0));
+        assertEquals(4D, matrix.getComponent(1,1));
     }
 }
