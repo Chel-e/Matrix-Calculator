@@ -1,4 +1,4 @@
-package com.michel.matrixcalculator;
+package com.michel.matrixcalculator.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

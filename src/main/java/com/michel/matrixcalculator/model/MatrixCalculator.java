@@ -19,4 +19,14 @@ public class MatrixCalculator {
         return result;
     }
 
+    public Double[][] sub() {
+        Double[][] result = new Double[matrix1.getRows()][matrix1.getCols()];
+        for (int i = 0; i < matrix1.getRows(); i++) {
+            for (int j = 0; j < matrix1.getCols(); j++) {
+                result[i][j] = matrix1.getComponent(i, j) - matrix2.getComponent(i, j);
+            }
+        }
+        return result;
+    }
+
 }

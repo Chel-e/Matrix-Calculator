@@ -5,4 +5,6 @@ module com.michel.matrixcalculator {
 
     opens com.michel.matrixcalculator to javafx.fxml;
     exports com.michel.matrixcalculator;
+    exports com.michel.matrixcalculator.controller;
+    opens com.michel.matrixcalculator.controller to javafx.fxml;
 }
