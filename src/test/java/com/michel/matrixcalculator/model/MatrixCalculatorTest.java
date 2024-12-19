@@ -29,7 +29,7 @@ class MatrixCalculatorTest {
     @Test
     void testSum() {
         Double[][] result = matrixCalculator.sum();
-        Double[][] compare ={{ 2D, 4D }, {9D, 8D}};
+        Double[][] compare ={{ 2D, 4D }, {6D, 8D}};
         assertArrayEquals(compare[0], result[0]);
         assertArrayEquals(compare[1], result[1]);
     }

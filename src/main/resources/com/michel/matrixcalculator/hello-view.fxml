@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.michel.matrixcalculator.controller.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+<VBox fx:id="vBox" alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.michel.matrixcalculator.controller.MatrixController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter The Want Operation " textAlignment="CENTER" VBox.vgrow="ALWAYS">
+      <font>
+         <Font size="21.0" />
+      </font>
+   </Text>
+   <HBox fx:id="hBox" alignment="CENTER" spacing="5.0" VBox.vgrow="ALWAYS">
+      <children>
+          <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="x" />
+          <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="-" />
+          <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="+" />
+          <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="*" textAlignment="CENTER" />
+      </children>
+   </HBox>
 </VBox>
