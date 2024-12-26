@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox fx:id="vBox" alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.michel.matrixcalculator.controller.MatrixController">
+<VBox fx:id="vBox" alignment="CENTER" prefHeight="316.0" prefWidth="312.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.michel.matrixcalculator.controller.MatrixController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -16,11 +16,11 @@
          <Font size="21.0" />
       </font>
    </Text>
-   <HBox fx:id="hBox" alignment="CENTER" spacing="5.0" VBox.vgrow="ALWAYS">
+   <HBox fx:id="hBox" alignment="CENTER" prefHeight="181.0" prefWidth="272.0" spacing="5.0" VBox.vgrow="ALWAYS">
       <children>
           <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="x" />
           <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="-" />
-          <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="+" />
+          <Button alignment="CENTER" mnemonicParsing="false" onAction="#onClickSum" prefHeight="60.0" prefWidth="60.0" text="+" />
           <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text="*" textAlignment="CENTER" />
       </children>
    </HBox>
