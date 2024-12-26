@@ -13,15 +13,21 @@ public class MatrixController {
     @FXML
     private void onClickSum() {
         Label dimensionsMatrix1 = new Label("Dimensions of the first matrix");
+
         TextField lineMatrix1 = new TextField();
         lineMatrix1.setPromptText("Line");
+
         TextField rowMatrix1 = new TextField();
         rowMatrix1.setPromptText("Row");
+
         Label dimensionsMatrix2 = new Label("Dimensions of the second matrix");
+
         TextField lineMatrix2 = new TextField();
         lineMatrix2.setPromptText("Line");
+
         TextField rowMatrix2 = new TextField();
         rowMatrix2.setPromptText("Row");
+
         vBox.getChildren().addAll(dimensionsMatrix1, lineMatrix1, rowMatrix1, dimensionsMatrix2, lineMatrix2, rowMatrix2);
     }
 }
