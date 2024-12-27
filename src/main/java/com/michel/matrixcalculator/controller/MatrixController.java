@@ -1,6 +1,9 @@
 package com.michel.matrixcalculator.controller;
 
+import com.michel.matrixcalculator.controller.implementationsSceneController.SumController;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TextFormatter;
@@ -20,14 +23,23 @@ public class MatrixController {
         TextField rowMatrix1 = new TextField();
         rowMatrix1.setPromptText("Row");
 
-        Label dimensionsMatrix2 = new Label("Dimensions of the second matrix");
 
-        TextField lineMatrix2 = new TextField();
-        lineMatrix2.setPromptText("Line");
+        Button button = getButton(lineMatrix1, rowMatrix1);
+        vBox.getChildren().addAll(dimensionsMatrix1, lineMatrix1, rowMatrix1, button);
 
-        TextField rowMatrix2 = new TextField();
-        rowMatrix2.setPromptText("Row");
+    }
 
-        vBox.getChildren().addAll(dimensionsMatrix1, lineMatrix1, rowMatrix1, dimensionsMatrix2, lineMatrix2, rowMatrix2);
+    private Button getButton(TextField lineMatrix1, TextField rowMatrix1) {
+        Button button = new Button("enter");
+        button.setOnMouseClicked(event -> {
+            if (lineMatrix1.getText() != null && rowMatrix1.getText() != null) {
+
+                SceneController sceneController = new SumController();
+                sceneController.update(vBox,
+                        Integer.parseInt(lineMatrix1.getText()), Integer.parseInt(rowMatrix1.getText()));
+            }
+
+        });
+        return button;
     }
 }
